@@ -16,6 +16,13 @@
 </head>
 
 <body>
+
+@if(session()->has('success'))
+    <div class="alert alert-success">
+        {{ session()->get('success') }}
+    </div>
+@endif
+
 <header class="header sticky">
     <div class="container">
         <div class="logo">
